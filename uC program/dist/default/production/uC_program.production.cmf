@@ -1,0 +1,789 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.obj
+end_init CODE 0 1 1 1 2
+reset_vec CODE 0 0 0 1 2
+config CONFIG 0 8007 8007 2 2
+$dist/default/production\uC_program.production.obj
+cinit CODE 0 7F7 7F7 9 2
+text12 CODE 0 39A 39A 18 2
+text11 CODE 0 372 372 12 2
+text10 CODE 0 36D 36D 5 2
+text9 CODE 0 4EE 4EE 5E 2
+text8 CODE 0 384 384 16 2
+text7 CODE 0 3CF 3CF 3D 2
+text6 CODE 0 453 453 48 2
+text5 CODE 0 49B 49B 53 2
+text4 CODE 0 40C 40C 47 2
+text3 CODE 0 3B2 3B2 1D 2
+text2 CODE 0 54C 54C 77 2
+text1 CODE 0 5C3 5C3 99 2
+maintext CODE 0 65C 65C 19B 2
+cstackBANK0 BANK0 1 20 20 D 1
+cstackCOMMON COMMON 1 70 70 D 1
+bssBANK0 BANK0 1 2D 2D 7 1
+strings STRING 0 2 2 90 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 00034-0006F 1
+BANK1 000A0-000BF 1
+BIGRAM 02000-0206F 1
+CODE 00092-0036C 2
+COMMON 0007D-0007D 1
+CONST 00092-0036C 2
+ENTRY 00092-0036C 2
+IDLOC 08000-08003 2
+RAM 00034-0006F 1
+RAM 000A0-000BF 1
+SFR0 00000-0001F 1
+SFR1 00080-0009F 1
+SFR10 00500-0056F 1
+SFR11 00580-005EF 1
+SFR12 00600-0066F 1
+SFR13 00680-006EF 1
+SFR14 00700-0076F 1
+SFR15 00780-007EF 1
+SFR16 00800-0086F 1
+SFR17 00880-008EF 1
+SFR18 00900-0096F 1
+SFR19 00980-009EF 1
+SFR2 00100-0016F 1
+SFR20 00A00-00A6F 1
+SFR21 00A80-00AEF 1
+SFR22 00B00-00B6F 1
+SFR23 00B80-00BEF 1
+SFR24 00C00-00C6F 1
+SFR25 00C80-00CEF 1
+SFR26 00D00-00D6F 1
+SFR27 00D80-00DEF 1
+SFR28 00E00-00E6F 1
+SFR29 00E80-00EEF 1
+SFR3 00180-001EF 1
+SFR30 00F00-00F6F 1
+SFR31 00F80-00FEF 1
+SFR4 00200-0026F 1
+SFR5 00280-002EF 1
+SFR6 00300-0036F 1
+SFR7 00380-003EF 1
+SFR8 00400-0046F 1
+SFR9 00480-004EF 1
+STACK 02014-0206F 1
+STRCODE 00092-0036C 2
+STRING 00092-0036C 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\uC_program.production.obj
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":56 36D text10 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":57 36D text10 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":58 36F text10 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":59 371 text10 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":48 372 text11 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":49 373 text11 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":50 375 text11 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":51 377 text11 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":52 379 text11 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":53 381 text11 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":54 383 text11 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":116 384 text8 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":118 385 text8 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":119 38F text8 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":118 395 text8 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":26 39A text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":120 39A text8 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":27 39B text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":28 39D text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":29 3A0 text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":30 3A0 text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":32 3A2 text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":33 3A4 text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":34 3A6 text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":35 3A6 text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":37 3A7 text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":38 3A9 text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":39 3AB text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":40 3AB text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":42 3AC text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":43 3AE text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":44 3B0 text12 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":45 3B0 text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\wmul.c":4 3B2 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\wmul.c":20 3B2 text3 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":46 3B2 text12 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\wmul.c":22 3B4 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\wmul.c":23 3B6 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\wmul.c":24 3BA text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\wmul.c":25 3BF text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\wmul.c":26 3C4 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\wmul.c":30 3C8 text3 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\wmul.c":31 3CF text3 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":61 3CF text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":63 3D0 text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":64 3D1 text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":65 3D2 text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":66 3D6 text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":67 3DB text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":68 3E5 text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":69 3EA text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":70 3EC text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":71 3EE text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":72 3F3 text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":73 3F8 text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":74 402 text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":75 407 text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":76 409 text7 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":77 40B text7 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":6 40C text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":13 40C text4 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":78 40C text7 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":14 40D text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":15 40F text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":16 414 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":18 416 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":19 418 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":20 41D text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":21 421 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":22 423 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":23 425 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":24 42A text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":22 42E text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":27 42F text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":28 437 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":29 43B text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":30 440 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":32 444 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":33 447 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":34 44C text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awmod.c":35 453 text4 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":80 453 text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":81 453 text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":83 455 text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":84 474 text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":85 476 text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":86 47F text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":87 481 text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":88 48A text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":89 48C text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":90 48E text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":91 490 text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":92 492 text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":93 494 text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":94 496 text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":95 498 text6 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":96 49A text6 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":6 49B text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":14 49B text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":15 49C text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":16 49E text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":17 4A3 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":19 4A5 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":20 4A7 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":21 4AC text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":23 4B0 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":24 4B2 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":25 4B6 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":26 4B8 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":27 4BA text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":28 4BF text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":26 4C3 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":31 4C4 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":32 4C9 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":33 4D1 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":34 4D5 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":36 4D6 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":37 4DB text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":39 4DF text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":40 4E2 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":41 4E7 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.30\sources\common\awdiv.c":42 4EE text5 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":98 4EE text9 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":102 4EF text9 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":103 4F4 text9 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":104 4F9 text9 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":105 4FB text9 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":106 503 text9 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":108 505 text9 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":109 524 text9 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":110 526 text9 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":111 528 text9 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":112 52A text9 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":113 549 text9 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":114 54B text9 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":122 54C text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":124 54C text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":125 551 text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":126 553 text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":127 55E text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":129 56F text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":131 576 text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":132 57A text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":133 58C text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":134 590 text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":136 594 text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":137 5AD text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":138 5BE text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":140 5C1 text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":138 5C2 text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":140 5C3 text2 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":142 5C3 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":143 5C3 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":144 5C4 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":145 5C5 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":146 5C9 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":147 5CB text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":148 5D9 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":149 5DA text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":150 5DB text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":151 5DF text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":152 5E1 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":153 5EF text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":154 5F0 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":155 5F1 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":156 5F5 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":157 5F7 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":158 605 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":159 606 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":160 607 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":161 60B text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":162 60D text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":163 61B text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":164 61C text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":165 61D text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":166 629 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":167 62D text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":168 63B text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":167 642 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":170 652 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":171 659 text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":172 65B text1 CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":173 65C maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":174 65C maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":175 65F maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":176 660 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":177 661 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":178 662 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":179 663 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":180 664 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":181 665 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":182 666 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":183 667 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":184 668 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":185 66A maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":186 66C maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":187 66D maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":188 66E maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":192 66F maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":193 67B maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":194 67E maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":195 67F maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":197 688 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":198 689 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":199 68A maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":200 68E maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":201 690 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":204 691 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":205 692 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":206 699 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":208 6A4 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":209 6A5 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":210 6A6 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":211 6AA maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":212 6B8 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":211 6BF maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":214 6CF maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":215 6D6 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":216 6D8 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":220 6E2 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":221 6E5 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":222 6E6 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":224 6EB maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":225 6EC maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":226 6ED maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":227 6F1 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":228 6F3 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":231 6F4 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":232 6FB maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":233 706 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":234 707 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":235 708 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":236 70C maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":237 71A maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":236 721 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":239 731 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":240 738 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":241 73A maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":245 744 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":246 747 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":247 748 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":248 756 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":249 757 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":251 765 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":252 766 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":253 767 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":254 76B maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":255 76D maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":257 76E maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":258 76F maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":259 770 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":260 774 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":261 776 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":262 77B maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":294 77B maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":264 781 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":265 782 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":266 783 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":268 788 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":269 789 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":270 78A maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":271 78C maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":272 790 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":273 792 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":274 795 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":276 796 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":277 79C maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":278 7A7 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":279 7A8 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":280 7A9 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":281 7AD maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":282 7BB maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":281 7C2 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":284 7D2 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":285 7D9 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":286 7DB maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":288 7DE maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":289 7DF maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":290 7E3 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":291 7E5 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":286 7E8 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":293 7E9 maintext CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":262 7F6 maintext CODE
+"C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.":587 7F7 cinit CODE
+"C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.":590 7F7 cinit CODE
+"C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.":607 7F7 cinit CODE
+"C:\Users\D.Vesa\Documents\MPLABXProjects\uC program\newmain.c":302 7F7 maintext CODE
+"C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.":608 7F8 cinit CODE
+"C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.":609 7F9 cinit CODE
+"C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.":610 7FA cinit CODE
+"C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.":611 7FB cinit CODE
+"C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.":612 7FC cinit CODE
+"C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.":613 7FD cinit CODE
+"C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.":619 7FE cinit CODE
+"C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.":620 7FE cinit CODE
+"C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.":621 7FF cinit CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___awdiv@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__size_of_Lcd_Cmd 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__S0 8009 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__Hintentry 2 0 CODE 0 intentry -
+__Lintentry 2 0 CODE 0 intentry -
+__end_of___awdiv 9DC 0 CODE 0 text5 dist/default/production\uC_program.production.obj
+__size_of_Lcd_SetBit 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+_itoa A98 0 CODE 0 text2 dist/default/production\uC_program.production.obj
+_main CB8 0 CODE 0 maintext dist/default/production\uC_program.production.obj
+___sp 0 0 STACK 2 stack C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.obj
+btemp 7E 0 ABS 0 - dist/default/production\uC_program.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\uC_program.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\uC_program.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\uC_program.production.obj
+start 2 0 CODE 0 init C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.obj
+_TRISA 8C 0 ABS 0 - dist/default/production\uC_program.production.obj
+_TRISB 8D 0 ABS 0 - dist/default/production\uC_program.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.obj
+__size_of_initializing 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\uC_program.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\uC_program.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\uC_program.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\uC_program.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\uC_program.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\uC_program.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\uC_program.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\uC_program.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\uC_program.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\uC_program.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\uC_program.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\uC_program.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\uC_program.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\uC_program.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\uC_program.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\uC_program.production.obj
+__Hconfig 10012 0 CONFIG 0 config -
+__Lconfig 1000E 0 CONFIG 0 config -
+itoa@b 7B 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+itoa@i 79 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__end_of__stringtab 6 0 STRING 0 strings dist/default/production\uC_program.production.obj
+main@j 2B 0 BANK0 1 cstackBANK0 dist/default/production\uC_program.production.obj
+itoa@p 22 0 BANK0 1 cstackBANK0 dist/default/production\uC_program.production.obj
+__Hbigram 0 0 ABS 0 bigram -
+__Lbigram 0 0 ABS 0 bigram -
+_check 2D 0 BANK0 1 bssBANK0 dist/default/production\uC_program.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+Lcd_Start@i 76 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+Lcd_Set_Cursor@b 74 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__end_of__stringdata 124 0 STRING 0 strings dist/default/production\uC_program.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+_Lcd_Print_Char 9DC 0 CODE 0 text9 dist/default/production\uC_program.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+___int_sp 0 0 STACK 2 stack C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.obj
+__CFG_CLKOUTEN$OFF 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+_ANSELA 18C 0 ABS 0 - dist/default/production\uC_program.production.obj
+_ANSELB 18D 0 ABS 0 - dist/default/production\uC_program.production.obj
+_ANSELC 18E 0 ABS 0 - dist/default/production\uC_program.production.obj
+__size_of_Lcd_Print_String 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+?___awdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+_OSCCON 99 0 ABS 0 - dist/default/production\uC_program.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__end_of___awmod 8A6 0 CODE 0 text4 dist/default/production\uC_program.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+_Lcd_Clear 6DA 0 CODE 0 text10 dist/default/production\uC_program.production.obj
+stackhi 206F 0 ABS 0 - C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_initializing B86 0 CODE 0 text1 dist/default/production\uC_program.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\uC_program.production.obj
+_Buffer 31 0 BANK0 1 bssBANK0 dist/default/production\uC_program.production.obj
+___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+stacklo 2014 0 ABS 0 - C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.obj
+__Hinit 2 0 CODE 0 init -
+__Linit 2 0 CODE 0 init -
+___wmul 764 0 CODE 0 text3 dist/default/production\uC_program.production.obj
+__end_of_main FEE 0 CODE 0 maintext dist/default/production\uC_program.production.obj
+__end_of_Lcd_Cmd 708 0 CODE 0 text11 dist/default/production\uC_program.production.obj
+_contor 2F 0 BANK0 1 bssBANK0 dist/default/production\uC_program.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+end_of_initialization FFC 0 CODE 0 cinit dist/default/production\uC_program.production.obj
+__end_of_Lcd_SetBit 764 0 CODE 0 text12 dist/default/production\uC_program.production.obj
+___awdiv@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+Lcd_Print_Char@i 75 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__size_of_Lcd_Clear 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__stringtab 4 0 STRING 0 strings dist/default/production\uC_program.production.obj
+__size_of_Lcd_Start 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+itoa@digit 6 0 STRING 0 strings dist/default/production\uC_program.production.obj
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+_TRISCbits 8E 0 ABS 0 - dist/default/production\uC_program.production.obj
+_PORTAbits C 0 ABS 0 - dist/default/production\uC_program.production.obj
+_PORTBbits D 0 ABS 0 - dist/default/production\uC_program.production.obj
+_PORTCbits E 0 ABS 0 - dist/default/production\uC_program.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__pstrings 4 0 STRING 0 strings dist/default/production\uC_program.production.obj
+_Lcd_Print_String 708 0 CODE 0 text8 dist/default/production\uC_program.production.obj
+_Lcd_Start 8A6 0 CODE 0 text6 dist/default/production\uC_program.production.obj
+__end_of_Lcd_Start 936 0 CODE 0 text6 dist/default/production\uC_program.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+_Lcd_Set_Cursor 79E 0 CODE 0 text7 dist/default/production\uC_program.production.obj
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 BANK2 1 bank2 -
+__Lbank2 0 0 BANK2 1 bank2 -
+__Hbank3 0 0 BANK3 1 bank3 -
+__Lbank3 0 0 BANK3 1 bank3 -
+___latbits 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__Hbank4 0 0 BANK4 1 bank4 -
+__Lbank4 0 0 BANK4 1 bank4 -
+__Hbank5 0 0 BANK5 1 bank5 -
+__Lbank5 0 0 BANK5 1 bank5 -
+itoa@shifter 20 0 BANK0 1 cstackBANK0 dist/default/production\uC_program.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__Hbank6 0 0 BANK6 1 bank6 -
+__Lbank6 0 0 BANK6 1 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__ptext1 B86 0 CODE 0 text1 dist/default/production\uC_program.production.obj
+__ptext2 A98 0 CODE 0 text2 dist/default/production\uC_program.production.obj
+__ptext3 764 0 CODE 0 text3 dist/default/production\uC_program.production.obj
+__ptext4 818 0 CODE 0 text4 dist/default/production\uC_program.production.obj
+__ptext5 936 0 CODE 0 text5 dist/default/production\uC_program.production.obj
+__ptext6 8A6 0 CODE 0 text6 dist/default/production\uC_program.production.obj
+__ptext7 79E 0 CODE 0 text7 dist/default/production\uC_program.production.obj
+Lcd_Set_Cursor@a 77 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__ptext8 708 0 CODE 0 text8 dist/default/production\uC_program.production.obj
+__ptext9 9DC 0 CODE 0 text9 dist/default/production\uC_program.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__size_of_Lcd_Print_Char 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__end_of__initialization FFC 0 CODE 0 cinit dist/default/production\uC_program.production.obj
+_Lcd_Cmd 6E4 0 CODE 0 text11 dist/default/production\uC_program.production.obj
+Lcd_Set_Cursor@temp 7A 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+_Lcd_SetBit 734 0 CODE 0 text12 dist/default/production\uC_program.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+Lcd_Print_String@a 79 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+Lcd_Print_String@i 77 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+___awmod 818 0 CODE 0 text4 dist/default/production\uC_program.production.obj
+?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__Hcinit 1000 0 CODE 0 cinit -
+__Lcinit FEE 0 CODE 0 cinit -
+___awdiv 936 0 CODE 0 text5 dist/default/production\uC_program.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__end_of_Lcd_Set_Cursor 818 0 CODE 0 text7 dist/default/production\uC_program.production.obj
+__size_of_Lcd_Set_Cursor 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__size_of_itoa 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__end_ofitoa@digit 1A 0 STRING 0 strings dist/default/production\uC_program.production.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__end_of_Lcd_Clear 6E4 0 CODE 0 text10 dist/default/production\uC_program.production.obj
+Lcd_Set_Cursor@z 78 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__Hbank10 0 0 BANK10 1 bank10 -
+__pbssBANK0 2D 0 BANK0 1 bssBANK0 dist/default/production\uC_program.production.obj
+__Lbank10 0 0 BANK10 1 bank10 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__ptext10 6DA 0 CODE 0 text10 dist/default/production\uC_program.production.obj
+__Hbank15 0 0 BANK15 1 bank15 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__ptext11 6E4 0 CODE 0 text11 dist/default/production\uC_program.production.obj
+__Hbank16 0 0 BANK16 1 bank16 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__ptext12 734 0 CODE 0 text12 dist/default/production\uC_program.production.obj
+__Hbank17 0 0 BANK17 1 bank17 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__Lbank28 0 0 BANK28 1 bank28 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__Hend_init 4 0 CODE 0 end_init -
+__Lend_init 2 0 CODE 0 end_init -
+Lcd_Print_Char@Lower_Nibble 72 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__Hreset_vec 2 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of_itoa B86 0 CODE 0 text2 dist/default/production\uC_program.production.obj
+__stringdata 1A 0 STRING 0 strings dist/default/production\uC_program.production.obj
+__end_of_Lcd_Print_String 734 0 CODE 0 text8 dist/default/production\uC_program.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.obj
+intlevel2 0 0 CODE 0 functab C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.obj
+__end_of_initializing CB8 0 CODE 0 text1 dist/default/production\uC_program.production.obj
+intlevel3 0 0 CODE 0 functab C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.obj
+intlevel4 0 0 CODE 0 functab C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.obj
+__CFG_LPBOR$OFF 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+intlevel5 0 0 CODE 0 functab C:\Users\D8A93~1.VES\AppData\Local\Temp\s1v8.obj
+initializing@j 26 0 BANK0 1 cstackBANK0 dist/default/production\uC_program.production.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__end_of___wmul 79E 0 CODE 0 text3 dist/default/production\uC_program.production.obj
+start_initialization FEE 0 CODE 0 cinit dist/default/production\uC_program.production.obj
+___awdiv@quotient 77 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+Lcd_Print_Char@data 74 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext CB8 0 CODE 0 maintext dist/default/production\uC_program.production.obj
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__size_of___awmod 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+__initialization FEE 0 CODE 0 cinit dist/default/production\uC_program.production.obj
+Lcd_Print_Char@Upper_Nibble 73 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+Lcd_Cmd@a 73 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+Lcd_Set_Cursor@y 79 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__end_of_Lcd_Print_Char A98 0 CODE 0 text9 dist/default/production\uC_program.production.obj
+___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\uC_program.production.obj
+Lcd_SetBit@data_bit 70 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\uC_program.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 2 2
+cinit 0 7F7 FEE 9 2
+config 0 8007 1000E 2 2
+cstackCOMMON 1 70 70 D 1
+cstackBANK0 1 20 20 14 1
+maintext 0 65C CB8 19B 2
+text1 0 5C3 B86 99 2
+strings 0 2 4 90 2
+text2 0 54C A98 77 2
+text9 0 4EE 9DC 5E 2
+text5 0 49B 936 53 2
+text6 0 453 8A6 48 2
+text4 0 40C 818 47 2
+text7 0 3CF 79E 3D 2
+text3 0 3B2 764 1D 2
+text12 0 39A 734 18 2
+text8 0 384 708 16 2
+text11 0 372 6E4 12 2
+text10 0 36D 6DA 5 2

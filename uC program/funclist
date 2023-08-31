@@ -1,0 +1,18 @@
+___awdiv: CODE, 1179 0 83
+__stringtab: STRING, 2 0 1
+__stringdata: STRING, 13 0 133
+___awmod: CODE, 1036 0 71
+_main: CODE, 1628 0 411
+_Lcd_Cmd: CODE, 882 0 18
+_Lcd_SetBit: CODE, 922 0 24
+_Lcd_Start: CODE, 1107 0 72
+__initialization: CODE, 2039 0 7
+_Lcd_Set_Cursor: CODE, 975 0 61
+itoa@digit: STRING, 3 0 10
+_Lcd_Clear: CODE, 877 0 5
+_itoa: CODE, 1356 0 119
+_Lcd_Print_String: CODE, 900 0 22
+_initializing: CODE, 1475 0 153
+___wmul: CODE, 946 0 29
+_Lcd_Print_Char: CODE, 1262 0 94
+Total: 1313
